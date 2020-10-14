@@ -78,7 +78,32 @@ public class Mypage extends AppCompatActivity {
 
         ((EditText)findViewById(R.id.textView)).setText(inputText);
 
+        String inputText2 = sharedPreferences.getString("phone",""); // 이름
+        Log.d("test : ", inputText2);
 
+        ((EditText)findViewById(R.id.textView2)).setText(inputText2);
+
+        String inputText3 = sharedPreferences.getString("address",""); // 이름
+        Log.d("test : ", inputText3);
+
+        ((EditText)findViewById(R.id.textView3)).setText(inputText3);
+
+        String inputText4 = sharedPreferences.getString("email",""); // 이름
+        Log.d("test : ", inputText4);
+
+        ((EditText)findViewById(R.id.textView7)).setText(inputText4);
+
+        //editText.setText(inputText);
+        /*
+        String inputText2 = sharedPreferences.getString("inputText","");
+        editText2.setText(inputText2);
+
+        String inputText3 = sharedPreferences.getString("inputText","");
+        editText3.setText(inputText3);
+
+        String inputText4 = sharedPreferences.getString("inputText","");
+        editText4.setText(inputText4);
+*/
     }
 }// MainActivity class..
 
