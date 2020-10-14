@@ -35,8 +35,8 @@ public class Data extends AppCompatActivity {
         Button button13 = (Button) findViewById(R.id.button13);
         button13.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent myintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.data.go.kr/data/15048243/fileData.do"));
-                startActivity(myintent);
+                Intent myintent1 = new Intent(Data.this, phnumber.class);
+                startActivity(myintent1);
             }
         });
     }
